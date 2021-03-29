@@ -147,7 +147,7 @@ public class GridPaintActivity extends BaseActivity implements View.OnClickListe
         mDeleteView.setOnClickListener(this);
         mSpaceView.setOnClickListener(this);
         mPenCircleView.setOnClickListener(this);
-        tvCancel.setOnClickListener(this);
+//        tvCancel.setOnClickListener(this);
         mClearView.setOnClickListener(this);
         tvSave.setOnClickListener(this);
         mPenCircleView.setPaintColor(PenConfig.PAINT_COLOR);
@@ -245,10 +245,10 @@ public class GridPaintActivity extends BaseActivity implements View.OnClickListe
                 if (mSaveProgressDlg != null) {
                     mSaveProgressDlg.dismiss();
                 }
-                Intent intent = new Intent();
-                intent.putExtra(PenConfig.SAVE_PATH, mSavePath);
-                setResult(RESULT_OK, intent);
-                finish();
+//                Intent intent = new Intent();
+//                intent.putExtra(PenConfig.SAVE_PATH, mSavePath);
+//                setResult(RESULT_OK, intent);
+//                finish();
                 break;
             case MSG_WRITE_OK:
                 if (!mPaintView.isEmpty()) {
